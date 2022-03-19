@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    /* font-family: Roboto,sans-serif; */
+    font-family: "Cera Pro";
+}
+.center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+body{
+    
+    background-color: aliceblue;
+}
+.backgroundimage{
+    background-image: url(./images/arialbanner.jpg) ; 
+    background-repeat: no-repeat;
+    
+}
+.top-bar{
+    background-color: green;
+    color: white;
+    font-size: 13px;
+   
+}
+.logo{
+    height: 50px;
+}
+p{
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-size: 12px;
+}
+/* #navbarNav{
+    margin-left: 2rem;
+} */
+.nav{
+    /* margin-left: 13%; */
+}
+@media only screen and (max-width: 900px) {
+    .nav {
+        margin-left: 0;    
+    }
+    .logo{
+        height: 25px;
+    }
+  }
+.admission{
+    position: fixed;
+    display: inline-block;
+    right: 0;
+    border-radius: 20px 0 0 20px!important;
+    width: fit-content;
+    background-color: aquamarine;
+    margin-left: auto;
+    z-index: 2;
+    color: blueviolet;
+    
+}
+.happening{
+    padding-top: 100px;
+}
+.news{
+    height: 1.2rem;
+    background-color: antiquewhite;
+    
+}
+.carousel-control-next, .carousel-control-prev{
+    opacity: 0;
+    filter:alpha(opacity=0); /* IE support */
+}
+.welcome-box{
+    position: absolute;
+    background-color: #b9eed2;
+    top:110vh;
+    border-radius: 7px;
+    z-index: 1;
+    margin-right: 11%;
+}
+.desc-btn{
+    cursor: pointer;
+}
+.desc-btn:hover{
+    cursor: pointer;
+    background-color: orange;
+    /* color: brown; */
+}
+
+  /* Vertical Carousel */
+  
+  .vertical .carousel-inner {
+    height: 100%;
+  }
+  
+  .carousel.vertical .carousel-item {
+    -webkit-transition: 0.2s ease-in-out top;
+       -moz-transition: 0.2s ease-in-out top;
+        -ms-transition: 0.2s ease-in-out top;
+         -o-transition: 0.2s ease-in-out top;
+            transition: 0.2s ease-in-out top;
+  }
+  
+  .carousel.vertical .active {
+     top: 0;
+  }
+  
+  .carousel.vertical .carousel-item-next {
+     top: 100%;
+  }
+  
+  .carousel.vertical .carousel-item-prev {
+     top: -100%;
+  }
+  
+  .carousel.vertical .carousel-item-next.carousel-item-left,
+  .carousel.vertical .carousel-item-prev.carousel-item-right {
+     top: 0;
+  }
+  
+  .carousel.vertical .active.carousel-item-left {
+     top: -100%;
+  }
+  
+  .carousel.vertical .active.carousel-item-right {
+     top: 100%;
+  }
+  
+  .carousel.vertical .carousel-item {
+    left: 0;
+  }
+  .btn-know{
+      height: 2rem;
+      /* width: 5rem; */
+      overflow: hidden;
+      font-size: 0.8rem;
+  }
+  .achievements{
+      /* background-image: url('./images/arialbanner.jpg'); */
+
+      background-repeat: no-repeat;
+      max-width: 100%;
+      height: auto;
+  }
+  .achivementhead{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      font-weight: 400;
+      color: black;
+  }
+  .academics-head{
+    font-weight: 600;
+    font-size: 2.3rem;
+  }
+  .img-fluid{
+      border-radius: 2px;
+  }
+.verticalline{
+    width: 2px;
+    background-color: white;
+}
+.col-4{
+    max-width: 32.333333%;
+}
+.hrexplore{
+    margin-left:41% !important;
+     margin-right:25% !important;
+}
+.gallery{
+    margin-top: 8.2rem;
+}
+.fig{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    background-color: #3a9e68;
+    z-index: 1;
+    opacity: 0.5;
+    
+}
+.testi{
+    background-color: rgb(229, 238, 247);
+}
+.placementimages{
+    border: 2px solid #3a3939;
+    width: 100px;
+    height: 67px;
+}
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
