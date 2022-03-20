@@ -1,49 +1,46 @@
-*{
-    margin: 0;
-    padding: 0;
-    /* overflow: hidden; */
-    /* font-family: Roboto,sans-serif; */
-    font-family: "Cera Pro";
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  /* font-family: Roboto,sans-serif; */
+  font-family: "Cera Pro";
+  box-sizing: border-box;
 }
-.center{
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
-body{
-    
-    background-color: aliceblue;
+body {
+  background-color: aliceblue;
 }
-.backgroundimage{
-    background-image: url(./images/arialbanner.jpg) ; 
-    background-repeat: no-repeat;
-    
+.backgroundimage {
+  background-image: url(./images/arialbanner.jpg);
+  background-repeat: no-repeat;
 }
-.top-bar{
-    background-color: green;
-    color: white;
-    font-size: 13px;
-   
+.top-bar {
+  background-color: green;
+  color: white;
+  font-size: 0.8rem;
 }
-.logo{
-    height: 50px;
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
-p{
-    margin-left: 1rem;
-    margin-bottom: 0.3rem;
+.safinavbar {
+  padding-bottom: 13px;
+  background-color: aliceblue;
 }
-.navbar-light .navbar-nav .nav-link {
-    color: black;
-    font-size: 12px;
+.sticky {
+  background-color: aliceblue;
+  padding-bottom: 0px;
 }
-/* #navbarNav{
-    margin-left: 2rem;
-} */
-.nav{
-    /* margin-left: 13%; */
+.safinav {
+  padding: 5px;
 }
-<<<<<<< Updated upstream
 @media only screen and (max-width: 900px) {
     .nav {
         margin-left: 0;    
@@ -83,7 +80,7 @@ p{
     border-radius: 7px;
     z-index: 1;
     margin-right: 11%;
-=======
+}
 .wrapper {
   margin: 2rem;
 }
@@ -123,123 +120,232 @@ p{
   position: relative;
   left: 0;
   float: left;
->>>>>>> Stashed changes
 }
-.desc-btn{
-    cursor: pointer;
+.logo {
+  height: 50px;
 }
-.desc-btn:hover{
-    cursor: pointer;
-    background-color: orange;
-    /* color: brown; */
+p {
+  margin-left: 1rem;
+  margin-bottom: 0.3rem;
+}
+.nav {
+  display: block;
+  width: 100%;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-size: 12px;
 }
 
-  /* Vertical Carousel */
+.admission {
+  position: fixed;
+  display: inline-block;
+  right: 0;
+  top: 255px;
+  border-radius: 20px 0 0 20px !important;
+  width: fit-content;
+  background-color: rgb(0, 138, 18);
+  margin-left: auto;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+}
+.happening {
+  padding-top: 100px;
+}
+.news {
+  /* height: 1.5rem; */
+  background-color: antiquewhite;
+  margin-bottom: 3rem;
   
-  .vertical .carousel-inner {
-    height: 100%;
-  }
-  
-  .carousel.vertical .carousel-item {
-    -webkit-transition: 0.2s ease-in-out top;
-       -moz-transition: 0.2s ease-in-out top;
-        -ms-transition: 0.2s ease-in-out top;
-         -o-transition: 0.2s ease-in-out top;
-            transition: 0.2s ease-in-out top;
-  }
-  
-  .carousel.vertical .active {
-     top: 0;
-  }
-  
-  .carousel.vertical .carousel-item-next {
-     top: 100%;
-  }
-  
-  .carousel.vertical .carousel-item-prev {
-     top: -100%;
-  }
-  
-  .carousel.vertical .carousel-item-next.carousel-item-left,
-  .carousel.vertical .carousel-item-prev.carousel-item-right {
-     top: 0;
-  }
-  
-  .carousel.vertical .active.carousel-item-left {
-     top: -100%;
-  }
-  
-  .carousel.vertical .active.carousel-item-right {
-     top: 100%;
-  }
-  
-  .carousel.vertical .carousel-item {
-    left: 0;
-  }
-  .btn-know{
-      height: 2rem;
-      /* width: 5rem; */
-      overflow: hidden;
-      font-size: 0.8rem;
-  }
-  .achievements{
-      /* background-image: url('./images/arialbanner.jpg'); */
+}
 
-      background-repeat: no-repeat;
-      max-width: 100%;
-      height: auto;
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 0;
+  filter: alpha(opacity=0); /* IE support */
+}
+.welcome-box {
+  position: absolute;
+  background-color: #b9eed2;
+  top: 68vh;
+  /* border-radius: 7px; */
+  z-index: 1;
+  margin-right: 11%;
+  border-bottom: 4px solid #38c77b;
+}
+.desc-btn {
+  cursor: pointer;
+}
+.desc-btn:hover {
+  cursor: pointer;
+  background-color: orange;
+  /* color: brown; */
+}
+
+.btn-know {
+  height: 2rem;
+  /* width: 5rem; */
+  overflow: hidden;
+  font-size: 0.8rem;
+}
+.achievements {
+  background: url("./images/arialbanner.jpg") repeat fixed 100%;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+}
+.achivementhead {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  color: black;
+  background-color: #2fb86f85;
+}
+.academics-head {
+  font-weight: 600;
+  font-size: 2.3rem;
+}
+.img-fluid {
+  border-radius: 2px;
+}
+.verticalline {
+  width: 2px;
+  background-color: white;
+}
+.col-4 {
+  max-width: 32.333333%;
+}
+.hrexplore {
+  margin-left: 41% !important;
+  margin-right: 25% !important;
+}
+.gallery {
+  margin-top: 8.2rem;
+}
+.fig {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  background-color: #3a9e68;
+  z-index: 1;
+  opacity: 0.5;
+}
+.testi {
+  background-color: rgb(229, 238, 247);
+}
+.placementimages {
+  border: 2px solid #3a3939;
+  width: 77px;
+  height: 67px;
+}
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+.carousel-item {
+  background-position: center;
+  background-size: cover;
+}
+.owl-stage-outer {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.wrapper {
+  margin: 2rem;
+}
+.card {
+  background-color: #3a9e68;
+  /* height: 100px; */
+  margin: 1rem;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+.owl-dots {
+  text-align: center;
+  margin-top: 40px;
+}
+.owl-dot {
+  height: 15px;
+  width: 45px;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  margin: 0 5px;
+  border: 2px solid #000000 !important;
+}
+.owl-dot:hover,
+.owl-dot:active {
+  background: #000000 !important;
+}
+.owl-nav {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  width: 100%;
+}
+.owl-prev {
+  position: relative;
+  left: 0;
+  float: left;
+}
+.owl-next {
+  position: relative;
+  right: 0;
+  float: right;
+}
+img:hover {
+  background-color: #57bb7d55;
+  color: #000;
+}
+
+/* mobile responsive */
+@media only screen and (max-width: 900px) {
+  .nav {
+    margin-left: 0;
   }
-  .achivementhead{
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      font-weight: 400;
-      color: black;
+  .logo {
+    height: 25px;
   }
-  .academics-head{
-    font-weight: 600;
-    font-size: 2.3rem;
+  .top-bar {
+    font-size: 0.4rem;
   }
-  .img-fluid{
-      border-radius: 2px;
+  .welcome-box {
+    position: relative !important;
+    background-color: #b9eed2;
+    top: 0 !important;
+    height: 430px;
+    overflow: hidden;
+    border-radius: 7px;
+    margin-right: 0 !important;
   }
-.verticalline{
-    width: 2px;
-    background-color: white;
-}
-.col-4{
-    max-width: 32.333333%;
-}
-.hrexplore{
-    margin-left:41% !important;
-     margin-right:25% !important;
-}
-.gallery{
-    margin-top: 8.2rem;
-}
-.fig{
-    position: absolute;
-    color: rgb(0, 0, 0);
-    background-color: #3a9e68;
-    z-index: 1;
-    opacity: 0.5;
-    
-}
-.testi{
-    background-color: rgb(229, 238, 247);
-}
-.placementimages{
-    border: 2px solid #3a3939;
-    width: 100px;
-    height: 67px;
-}
-.container-fluid{
-    padding-left: 0px;
-    padding-right: 0px;
-}
-li{
-    text-decoration: none;
-    list-style: none;
-    text-align: center;
+  .headwekcome {
+    font-size: 1.8rem;
+  }
+  .pwekcome {
+    font-size: 0.3;
+  }
+  .happening {
+    padding-top: 0 !important;
+  }
+  .academics-head {
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+  .owl-dot {
+    height: 15px;
+    width: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    /* outline: none; */
+    margin: 0 5px;
+    border: 2px solid #000000 !important;
+  }
 }
